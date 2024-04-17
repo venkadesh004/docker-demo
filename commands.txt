@@ -1,0 +1,30 @@
+Docker Login:
+docker login
+
+Docker Build:
+docker build -t sample_app:v1 .
+
+To see images:
+docker images
+
+Docker see process:
+docker ps -a
+
+Docker run without detached mode:
+docker run sample_app
+
+Docker stop container:
+docker stop <container_id>
+
+Docker run with detached mode:
+docker run -d -p 3000:3000 sample_app
+
+Get all docker container id:
+sudo docker images -a -q
+
+Publish:
+sudo docker tag sample_app svenkadesh004/sample_app
+    sudo docker push svenkadesh004/sample_app
+
+Pull:
+docker pull mongo
